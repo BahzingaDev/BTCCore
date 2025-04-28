@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'xyz.jpenilla.run-paper' version '2.3.1'
+}
+
+group = 'org.btc'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = "https://repo.papermc.io/repository/maven-public/" }
+    maven { url = "https://repo.extendedclip.com/content/repositories/placeholderapi/" }
+    maven { url = 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT"
+    compileOnly "me.clip:placeholderapi:2.11.5"
+    implementation 'org.reflections:reflections:0.10.2'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release.set(21)
+}
+
+processResources {
+    filteringCharset = 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand('version': project.version)
+    }
+}
+
+tasks.register('copyJar', Copy) {
+    dependsOn build
+    from tasks.named('jar').flatMap { it.archiveFile }
+    into 'C:/Users/napol/Documents/TestServersTemp/BTCHub1/plugins'
+}

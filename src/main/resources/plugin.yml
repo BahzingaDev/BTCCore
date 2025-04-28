@@ -1,0 +1,30 @@
+name: BTCCore
+version: '1.0-SNAPSHOT'
+main: org.btc.Main
+api-version: '1.21'
+prefix: btcCore
+load: STARTUP
+authors: [ Jack Carter ]
+description: Core plugin for BTC Lvl 5 server project
+softdepend: [PlaceholderAPI]
+
+commands:
+  modules:
+    description: Manage plugin modules
+    usage: /modules <list|reload|enable|disable>
+    permission: btccore.modules.manage
+  mutechat:
+    description: Mute in-game chat
+    usage: /mutechat
+    permission: btccore.chat.mute
+  clearchat:
+    description: Clear in-game chat
+    usage: /clearchat
+    permission: btccore.chat.clear
+  maintenance:
+    description: Place a server into maintenance
+    usage: /maintenance
+    permission: btccore.admin
+  btcserver:
+    description: Connect to a server on the network
+    usage: /btcserver <server-name>

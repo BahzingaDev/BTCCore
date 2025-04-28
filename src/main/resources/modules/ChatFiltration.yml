@@ -1,0 +1,11 @@
+chat-filter:
+  blacklist:
+    - badword1
+    - badword2
+  regex:
+    - "\\bfuck\\b"
+    - "\\bshit\\b"
+  spam-threshold: 1500
+  bypass-permission: "btccore.chat.bypass"
+  warn-message: "&cYour message was blocked."
+  log-to-console: true

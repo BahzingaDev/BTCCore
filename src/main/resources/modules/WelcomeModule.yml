@@ -1,0 +1,13 @@
+join-msg:
+  - ' &6&lBTC&f&lMC &8&m|&r &fWelcome, &e%player_name%&f!'
+  - ' &8[+] &7&oType ''&6&o/server&7&o'' &oto join a minigame'
+  - ' &8[+] &7&oPlease make sure you follow server &6&o/rules'
+  - ' &f&o* Have fun and let us know if you need assistance *'
+announce-join:
+  enabled: true
+  message: ' &8[+&8] &e%player_name% &7joined the server!'
+  sound: 'UI_BUTTON_CLICK'
+announce-leave:
+  enabled: true
+  message: '&8[+&8] &e%player_name% &7has left the server!'
+  sound: 'UI_BUTTON_CLICK'

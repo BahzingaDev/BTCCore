@@ -1,0 +1,7 @@
+resource-pack:
+  enabled: false
+  url: "https://example.com/pack.zip"
+  hash: "1234567890abcdef1234567890abcdef12345678"
+  force: true
+  kickOnDecline: false
+  announceSuccess: true

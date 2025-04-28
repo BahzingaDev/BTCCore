@@ -1,0 +1,10 @@
+chatmute:
+  enabled: false # Whether chat is currently muted (true/false)
+
+  bypass-perm: "btccore.chat.bypass" # Permission that allows players to bypass the mute
+
+  block: "&cChat is currently muted. You cannot send messages." # Message shown to muted players trying to chat
+
+  muted-message: "&cChat has been muted by an administrator." # Broadcast message when chat is muted
+
+  unmuted-message: "&aChat has been unmuted by an administrator." # Broadcast message when chat is unmuted

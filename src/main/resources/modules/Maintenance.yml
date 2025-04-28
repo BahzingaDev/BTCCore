@@ -1,0 +1,5 @@
+maintenance:
+  message:
+    enabled:  '&cThis server has now entered maintenance mode.'
+    disabled:  '&cThis server is no longer under maintenance.'
+  enabled: false

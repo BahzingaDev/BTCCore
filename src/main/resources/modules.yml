@@ -1,0 +1,23 @@
+WelcomeModule:
+  enabled: true
+
+ChatFiltration:
+  enabled: true
+
+ChatMute:
+  enabled: true
+
+ChatClear:
+  enabled: true
+
+ServerListMOTD:
+  enabled: true
+
+ServerResourcePack:
+  enabled: true
+
+PluginCmdBlock:
+  enabled: true
+
+Maintenance:
+  enabled: true
